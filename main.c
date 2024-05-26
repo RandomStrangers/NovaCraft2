@@ -223,6 +223,7 @@ static void NovaCraft_Init(void) {
     Commands_Register(&WeatherCmd);
     Commands_Register(&TestCmd);
     Commands_Register(&TP2Cmd);
+    String_AppendConst_(&Server_->AppName, " + NovaCraft v1.3");
 }
 
 
@@ -242,4 +243,3 @@ PLUGIN_EXPORT int Plugin_ApiVersion = 1;
 PLUGIN_EXPORT struct IGameComponent Plugin_Component = {
 	NovaCraft_Init /* Init */
 };
-
